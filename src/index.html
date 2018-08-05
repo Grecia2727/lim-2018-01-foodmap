@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/estilo.css" />
+  <script type="text/javascript" language="javascript" src="./js/splash.js"></script>
+
+</head>
+
+<body>
+  <div class="contenedor">
+    <div class="cabecera">
+      <h1>Q-Nutrition</h1>
+
+    </div>
+    <div class="barra">
+    </div>
+    <div class="marco">
+      <div class="contenido">
+        <!-- <h2>App Q-Nutrition usando Google Maps.</h2> -->
+        <!-- Div para ver ubicacion y mapa -->
+        <div>
+          <p id="your-position"> </p>
+          <input id="pac-input" class="controls" type="text" placeholder="Ingresa restaurante a buscar">
+        </div>
+        <div id="mapa" style="width: 700px; height: 500px;">
+          --Aquí está tu ubicación--
+        </div>
+
+        <div id="infowindow-content">
+          <span id="place-name" class="title"></span>
+          <br> Place ID
+          <span id="place-id"></span>
+          <br>
+          <span id="place-address"></span>
+        </div>
+        <br>
+        <!-- ============================= -->
+
+        <div class="recomend">
+          <h6>Te recomendamos los restaurantes más visitados </h6>
+          <h6> Dale clic al restaurante que te interesa para ver más detalles. </h6>
+
+          <div class="left">
+            <a id="img1" class="waves-effect waves-light modal-trigger" href="#modal1">
+              <img src="img/1_s-locanda.PNG" class="block">
+            </a>
+            <a id="img2" class="waves-effect waves-light modal-trigger" href="#modal2">
+              <img src="img/2_s-lenacarbon.PNG" class="block">
+            </a>
+            <a id="img3" class="waves-effect waves-light modal-trigger" href="#modal3">
+              <img src="img/3_s-rigoleto.PNG" class="block">
+            </a>
+            <a id="img4" class="waves-effect waves-light modal-trigger" href="#modal4">
+              <img src="img/4_s-charrua.PNG" class="block">
+            </a>
+            <a id="img5" class="waves-effect waves-light modal-trigger" href="#modal5">
+              <img src="img/5_s-nanka.PNG" class="block">
+            </a>
+            <a id="img6" class="waves-effect waves-light modal-trigger" href="#modal6">
+              <img src="img/2_s-lenacarbon.PNG" class="block">
+            </a>
+          </div>
+        </div>
+
+
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <img id="img1" src="img/1_locanda.PNG" class="block">
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+          </div>
+        </div>
+        <div id="modal2" class="modal">
+          <div class="modal-content">
+            <img id="img2" src="img/2_lenacarbon.PNG" class="block">
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+          </div>
+        </div>
+        <div id="modal3" class="modal">
+          <div class="modal-content">
+            <img id="img2" src="img/3_rigoleto.PNG" class="block">
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+          </div>
+        </div>
+        <div id="modal4" class="modal">
+          <div class="modal-content">
+            <img id="img2" src="img/4_charrua.PNG" class="block">
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+          </div>
+        </div>
+        <div id="modal5" class="modal">
+          <div class="modal-content">
+            <img id="img2" src="img/5_nanka.PNG" class="block">
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+          </div>
+        </div>
+        <div id="modal6" class="modal">
+            <div class="modal-content">
+              <img id="img6" src="img/2_lenacarbon.PNG" class="block">
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+          </div>
+
+      </div>
+    </div>
+    <div class="barra">
+      <center>Grecia Anicama
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v3"></script>
+  <script src="js/appMaps.js"> </script>
+</body>
+
+</html>
